@@ -50,3 +50,21 @@ for i in range(1,5+1):
     print(i)
 print("\n")
 
+# Extra Preperations
+# IN LOOPS
+l = [44,True,44,"hello"]
+print(*l)
+
+print("\n")
+for items in l:
+    print(items)
+
+# IN TUPLES
+t = ("Hello", 1,5,True)
+for items in t:
+    print(items)
+
+# IN STRINGS
+name = "Maryam Bano"
+for letters in name:
+    print(letters)
