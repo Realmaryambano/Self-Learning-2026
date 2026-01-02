@@ -10,19 +10,19 @@
 # a = avg()
 # print(a)
 
+# Function using arguments with a default parameter
+def welcome(name="Maya"):  # 'name' has a default value of "Maya"
+    return "Welcome " + name  # Returns a greeting string
 
-#Function using arguments
-def welcome(name = "Maya"):
-    return "Welcome " + name
+# Function call without argument
+funCall = welcome()  # Uses default parameter 'name="Maya"'
+print(funCall)       # Output: Welcome Maya
 
-funCall = welcome()
-print(funCall)
+# Function call with an argument
+funCall = welcome("Harry")  # Overrides default, 'name' becomes "Harry"
+print(funCall)               # Output: Welcome Harry
 
-
-funCall = welcome("Harry")
-print(funCall)
-
+# Function call with a variable as argument
 girlName = "Maryam"
-funCall = welcome(girlName)
-print(funCall)
-
+funCall = welcome(girlName)  # Passes variable 'girlName' to 'name'
+print(funCall)               # Output: Welcome Maryam
