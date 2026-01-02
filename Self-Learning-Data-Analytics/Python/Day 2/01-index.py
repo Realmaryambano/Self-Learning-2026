@@ -6,9 +6,6 @@ c = int(input("Enter third number: "))
 average = (a+b+c)/3
 print(f"The average of 3 numbers: {a}, {b}, and {c} is {average}")
 
-
-
-
 # now making function
 def avg():
     a = int(input("Enter first number: "))
