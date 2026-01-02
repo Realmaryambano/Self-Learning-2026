@@ -19,8 +19,8 @@ greatestnum()
 greatestnum()
 # 1. Write a program using list to find greatest of three numbers.
 
-# num = []
-# for i in range(5):
-#     number = input(f"Enter number {i+1}: ")
-#     num.append(number)
-# print("The numbers are: ", ", ".join(num))
+num = []
+for i in range(5):
+    number = input(f"Enter number {i+1}: ")
+    num.append(number)
+print("The numbers are: ", ", ".join(num))
