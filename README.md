@@ -1,4 +1,4 @@
-# selflearning2026
+# Self-Learning-2026
 
 ## 📘 Overview
 This repository represents my **self-learning journey for the year 2026**.  
