@@ -7,7 +7,13 @@ print(data)
 f.close()
 
 # practice
-f_to_read = open("02-file.txt")
-data = f_to_read.read()
+# f_to_read = open("02-file.txt")
+# data = f_to_read.read()
+# print(data)
+# f_to_read.close()
+
+# practice again
+v = open("02-file.txt")
+data = v.read()
 print(data)
-f_to_read.close()
+v.close()
