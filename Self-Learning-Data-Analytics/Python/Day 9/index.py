@@ -72,3 +72,15 @@ def add_student(student_id, name, department):
     }
     issued_books[student_id] = []
 
+
+# ================================================================
+# PART 4: FUNCTION TO DISPLAY ALL STUDENTS
+# ================================================================
+
+def display_students():
+    print_line()
+    print("STUDENT LIST")
+    print_line()
+    for sid, info in student_details.items():
+        print("ID:", sid, "| Name:", info["name"], "| Dept:", info["department"])
+    print_line()
