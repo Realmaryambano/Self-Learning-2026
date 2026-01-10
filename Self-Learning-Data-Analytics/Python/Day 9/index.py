@@ -318,3 +318,30 @@ print_line()
 for sid in student_details:
     print("Student ID:", sid, "Details:", student_details[sid])
 print_line()
+
+
+# ================================================================
+# PART 21: SET OPERATIONS PRACTICE
+# ================================================================
+
+print_line()
+print("SET OPERATIONS")
+print_line()
+new_authors = {"John Smith", "New Author"}
+all_authors = authors.union(new_authors)
+print("All Authors:", all_authors)
+print_line()
+
+
+# ================================================================
+# PART 22: FUNCTION CALLING ANOTHER FUNCTION
+# ================================================================
+
+def full_report():
+    university_info()
+    library_statistics()
+    display_students()
+    display_books()
+
+full_report()
+
