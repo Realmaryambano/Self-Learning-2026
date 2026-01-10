@@ -84,3 +84,17 @@ def display_students():
     for sid, info in student_details.items():
         print("ID:", sid, "| Name:", info["name"], "| Dept:", info["department"])
     print_line()
+
+
+# ================================================================
+# PART 5: FUNCTION TO ADD A BOOK
+# ================================================================
+
+def add_book(book_id, title, author, copies):
+    books.append(title)
+    book_details[book_id] = {
+        "title": title,
+        "author": author,
+        "copies": copies
+    }
+    authors.add(author)
