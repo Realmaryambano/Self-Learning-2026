@@ -275,3 +275,19 @@ print_line()
 for i in range(1, 11):
     print("Number:", i)
 print_line()
+
+
+
+# ================================================================
+# PART 18: STRING MANIPULATION PRACTICE
+# ================================================================
+
+sample_string = "Learning Python is Fun"
+print_line()
+print("STRING OPERATIONS")
+print_line()
+print("Original:", sample_string)
+print("Uppercase:", sample_string.upper())
+print("Lowercase:", sample_string.lower())
+print("Word Count:", len(sample_string.split()))
+print_line()
