@@ -237,3 +237,29 @@ add_student(3, "Charlie", "IT")
 add_book(101, "Python Programming", "John Smith", 3)
 add_book(102, "Data Structures", "Jane Doe", 2)
 add_book(103, "Computer Networks", "Andrew Tanenbaum", 1)
+
+
+
+# ================================================================
+# PART 16: SIMULATED OPERATIONS
+# ================================================================
+
+display_students()
+display_books()
+
+issue_book(1, 101)
+issue_book(2, 102)
+issue_book(1, 102)
+issue_book(3, 103)
+
+display_issued_books()
+display_books()
+
+return_book(1, 101)
+display_books()
+
+search_book_by_title("python")
+display_authors()
+library_statistics()
+university_info()
+
