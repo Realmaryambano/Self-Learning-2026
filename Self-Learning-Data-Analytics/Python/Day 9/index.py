@@ -345,3 +345,44 @@ def full_report():
 
 full_report()
 
+
+
+
+# ================================================================
+# PART 23: SIMPLE CONDITIONAL EXAMPLES
+# ================================================================
+
+print_line()
+print("CONDITIONAL STATEMENTS")
+print_line()
+if total_book_copies() > 5:
+    print("Library has sufficient books.")
+else:
+    print("Library needs more books.")
+print_line()
+
+
+
+# ================================================================
+# PART 24: WHILE LOOP EXAMPLE
+# ================================================================
+
+print_line()
+print("WHILE LOOP DEMO")
+print_line()
+count = 1
+while count <= 5:
+    print("Count is:", count)
+    count += 1
+print_line()
+
+
+# ================================================================
+# PART 25: FINAL MESSAGE
+# ================================================================
+
+print_line()
+print("END OF PROGRAM")
+print("This program demonstrated basic Python concepts")
+print("for first semester Computer Science students.")
+print_line()
