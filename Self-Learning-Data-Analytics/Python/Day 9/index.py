@@ -291,3 +291,18 @@ print("Uppercase:", sample_string.upper())
 print("Lowercase:", sample_string.lower())
 print("Word Count:", len(sample_string.split()))
 print_line()
+
+
+# ================================================================
+# PART 19: LIST OPERATIONS PRACTICE
+# ================================================================
+
+print_line()
+print("LIST OPERATIONS")
+print_line()
+print("Students List:", students)
+students.sort()
+print("Sorted Students:", students)
+students.append("David")
+print("After Adding:", students)
+print_line()
