@@ -263,3 +263,15 @@ display_authors()
 library_statistics()
 university_info()
 
+
+
+# ================================================================
+# PART 17: LOOP PRACTICE FOR BEGINNERS
+# ================================================================
+
+print_line()
+print("LOOP PRACTICE: COUNTING NUMBERS")
+print_line()
+for i in range(1, 11):
+    print("Number:", i)
+print_line()
