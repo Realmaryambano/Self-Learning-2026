@@ -51,3 +51,11 @@ issued_books = {}
 
 # Set to keep track of all unique authors
 authors = set()
+
+
+# ================================================================
+# PART 2: UTILITY FUNCTION TO PRINT A LINE
+# ================================================================
+
+def print_line():
+    print("-" * 60)
