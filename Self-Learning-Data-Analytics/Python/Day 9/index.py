@@ -306,3 +306,15 @@ print("Sorted Students:", students)
 students.append("David")
 print("After Adding:", students)
 print_line()
+
+
+# ================================================================
+# PART 20: DICTIONARY OPERATIONS PRACTICE
+# ================================================================
+
+print_line()
+print("DICTIONARY OPERATIONS")
+print_line()
+for sid in student_details:
+    print("Student ID:", sid, "Details:", student_details[sid])
+print_line()
