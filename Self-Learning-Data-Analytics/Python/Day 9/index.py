@@ -59,3 +59,16 @@ authors = set()
 
 def print_line():
     print("-" * 60)
+
+# ================================================================
+# PART 3: FUNCTION TO ADD A STUDENT
+# ================================================================
+
+def add_student(student_id, name, department):
+    students.append(name)
+    student_details[student_id] = {
+        "name": name,
+        "department": department
+    }
+    issued_books[student_id] = []
+
