@@ -113,3 +113,127 @@ def display_books():
               "| Author:", info["author"],
               "| Copies:", info["copies"])
     print_line()
+
+
+# ================================================================
+# PART 7: FUNCTION TO ISSUE A BOOK
+# ================================================================
+
+def issue_book(student_id, book_id):
+    if student_id in student_details and book_id in book_details:
+        if book_details[book_id]["copies"] > 0:
+            issued_books[student_id].append(book_id)
+            book_details[book_id]["copies"] -= 1
+            print("Book issued successfully.")
+        else:
+            print("No copies available.")
+    else:
+        print("Invalid student ID or book ID.")
+
+
+# ================================================================
+# PART 8: FUNCTION TO RETURN A BOOK
+# ================================================================
+
+def return_book(student_id, book_id):
+    if book_id in issued_books.get(student_id, []):
+        issued_books[student_id].remove(book_id)
+        book_details[book_id]["copies"] += 1
+        print("Book returned successfully.")
+    else:
+        print("This book was not issued to the student.")
+
+
+# ================================================================
+# PART 9: FUNCTION TO DISPLAY ISSUED BOOKS
+# ================================================================
+
+def display_issued_books():
+    print_line()
+    print("ISSUED BOOKS")
+    print_line()
+    for sid, books_list in issued_books.items():
+        name = student_details[sid]["name"]
+        print("Student:", name, "| Books:", books_list)
+    print_line()
+
+
+# ================================================================
+# PART 10: FUNCTION TO DISPLAY AUTHORS (USING SET)
+# ================================================================
+
+def display_authors():
+    print_line()
+    print("AUTHORS IN LIBRARY")
+    print_line()
+    for author in authors:
+        print(author)
+    print_line()
+
+
+# ================================================================
+# PART 11: FUNCTION TO SEARCH A BOOK BY TITLE (STRING OPERATIONS)
+# ================================================================
+
+def search_book_by_title(keyword):
+    print_line()
+    print("SEARCH RESULTS FOR:", keyword)
+    print_line()
+    for info in book_details.values():
+        if keyword.lower() in info["title"].lower():
+            print(info["title"], "by", info["author"])
+    print_line()
+
+
+# ================================================================
+# PART 12: FUNCTION TO COUNT TOTAL BOOK COPIES
+# ================================================================
+
+def total_book_copies():
+    total = 0
+    for info in book_details.values():
+        total += info["copies"]
+    return total
+
+
+# ================================================================
+# PART 13: FUNCTION TO SHOW LIBRARY STATISTICS
+# ================================================================
+
+def library_statistics():
+    print_line()
+    print("LIBRARY STATISTICS")
+    print_line()
+    print("Total Students:", len(students))
+    print("Total Book Titles:", len(books))
+    print("Total Book Copies:", total_book_copies())
+    print("Total Authors:", len(authors))
+    print_line()
+
+
+# ================================================================
+# PART 14: FUNCTION USING TUPLES (DEMO PURPOSE)
+# ================================================================
+
+def university_info():
+    info = ("ABC University", "Computer Science Department", 2026)
+    print_line()
+    print("UNIVERSITY INFORMATION")
+    print_line()
+    print("Name:", info[0])
+    print("Department:", info[1])
+    print("Year:", info[2])
+    print_line()
+
+
+# ================================================================
+# PART 15: INITIAL DATA SETUP
+# ================================================================
+
+add_student(1, "Alice", "CS")
+add_student(2, "Bob", "CS")
+add_student(3, "Charlie", "IT")
+
+add_book(101, "Python Programming", "John Smith", 3)
+add_book(102, "Data Structures", "Jane Doe", 2)
+add_book(103, "Computer Networks", "Andrew Tanenbaum", 1)
