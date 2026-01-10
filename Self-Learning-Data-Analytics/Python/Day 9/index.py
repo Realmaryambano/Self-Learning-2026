@@ -98,3 +98,18 @@ def add_book(book_id, title, author, copies):
         "copies": copies
     }
     authors.add(author)
+
+# ================================================================
+# PART 6: FUNCTION TO DISPLAY ALL BOOKS
+# ================================================================
+
+def display_books():
+    print_line()
+    print("BOOK LIST")
+    print_line()
+    for bid, info in book_details.items():
+        print("ID:", bid,
+              "| Title:", info["title"],
+              "| Author:", info["author"],
+              "| Copies:", info["copies"])
+    print_line()
